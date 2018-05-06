@@ -1,0 +1,19 @@
+Christopher Morroni
+chmo0692@colorado.edu
+
+Make rules:
+  Build - builds program
+  Clean - cleans program
+
+Run program:
+   ./multi-lookup <# requesters> <# resolvers> <requester log> <resolver log> <data file> [<data file> ...]
+   
+   The file names specified by <data file> are passed to the pool of requester threads which place information 
+   into a shared data area. Resolver threads read the shared data area and find the corresponding IP address.
+   
+   <# requesters> number of requester threads to place into the thread pool.
+   <# resolvers> number of resolver threads to place into the thread pool.
+   <requester log> name of the file into which all the requester status information is written.
+   <resolver log> name of the file into which all the resolver status information is written.
+   <data file> file(s) that are to be processed. Each file contains a list of host names, one per line,
+               that are to be resolved.

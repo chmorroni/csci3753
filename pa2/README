@@ -1,0 +1,15 @@
+Christopher Morroni
+chmo0692@colorado.edu
+
+New files:
+  simple_character_module.c - definitions for module
+  pa2_test.c - test program for LKM
+  Makefile - build and clean module
+
+Build and run test program:
+  $ gcc -o pa1_test pa1_test.c
+  $ ./pa1_test
+
+Build and load module:
+  $ sudo make
+  $ sudo insmod simple_character_module.ko
